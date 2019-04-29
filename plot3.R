@@ -31,7 +31,7 @@ power_dt <- power_cons_data
 
 ## Creating plot 3
 
-## png("plot3.png", width = 480, height = 480)
+png("plot3.png", width = 480, height = 480)
 plot(power_dt$DateTS, power_dt$Sub_metering_1, type = "n", xaxt = "n", 
      ylab = "Energy sub metering", xlab = "")
 lines(power_dt$DateTS, power_dt$Sub_metering_1, type = "l")
@@ -42,4 +42,4 @@ axis(1,at = seq.POSIXt(from = power_dt$DateTS[1], by = "day", length.out = 3),
 legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
        col = c("black", "red", "blue"), lty = 1)
 
-## dev.off()
+dev.off()

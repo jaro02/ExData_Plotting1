@@ -31,7 +31,7 @@ power_dt <- power_cons_data
 
 ## Crerating plot1
 
-## png("plot1.png", width = 480, height = 480)
+png("plot1.png", width = 480, height = 480)
 hist(power_dt$Global_active_power, xlab = "Global Active Power (kilowatts)", 
      ylab = "Frequency", main = "Global Active Power", col = "red")
-## dev.off()
+dev.off()
